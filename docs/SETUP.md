@@ -9,6 +9,7 @@
 | Publishable key | `sb_publishable_wMRvGFlReNXKm8YHW7kxbw_0cqQwHa-` (safe to ship; baked as default in `lib/core/config/env.dart`) |
 | Edge functions | `create-checkout-session`, `create-portal-session`, `stripe-webhook`, `send-push`, `delete-account` (all deployed) |
 | GitHub | `ramiz7171/gismat` |
+| Landing (Vercel) | `https://gismat.vercel.app` (source in `landing/`, includes Stripe `/success` + `/cancel` pages) |
 
 ## Run the app
 
@@ -38,9 +39,9 @@ npx supabase secrets set --project-ref mkfvjvclsmgowalfscsc \
   STRIPE_WEBHOOK_SECRET=whsec_... \
   STRIPE_PRICE_PRO=price_... \
   STRIPE_PRICE_MAX=price_... \
-  CHECKOUT_SUCCESS_URL=https://<your-landing>/success \
-  CHECKOUT_CANCEL_URL=https://<your-landing>/cancel \
-  PORTAL_RETURN_URL=https://<your-landing>
+  CHECKOUT_SUCCESS_URL=https://gismat.vercel.app/success \
+  CHECKOUT_CANCEL_URL=https://gismat.vercel.app/cancel \
+  PORTAL_RETURN_URL=https://gismat.vercel.app
 ```
 
 ### 2. Firebase / FCM (push)

@@ -56,3 +56,7 @@ android/key.properties
 
 # Generated code (rebuilt by build_runner / gen-l10n in CI)
 lib/core/l10n/generated/
+
+# Vercel
+.vercel/
+landing/.env.local
