@@ -26,7 +26,7 @@ android {
         applicationId = "com.ramexar.gismat"
         // You can update the following values to match your application needs.
         // For more information, see: https://flutter.dev/to/review-gradle-config.
-        minSdk = flutter.minSdkVersion
+        minSdk = 23 // record_android requires 23; Android 6.0+ covers the market
         targetSdk = flutter.targetSdkVersion
         versionCode = flutter.versionCode
         versionName = flutter.versionName
